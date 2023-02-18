@@ -1,0 +1,112 @@
+/* BARBERS */
+.barbers {
+    background-color: #F7F7F7;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &__title {
+        margin-bottom: 44px;
+    }
+}
+
+.card {
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        width: calc((100% - 60px) / 3);
+    }
+
+    &__desc {
+        padding-top: 30px;
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 1.39;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: var(--main-dark-color);
+    }
+
+    &__comment {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: var(--accent-color);
+    }
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: var(--main-dark-color);
+
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+
+        transition: color 250ms linear;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    &__logo {
+        align-items: center;
+        fill: currentColor;
+        transition: fill 250ms linear;
+
+        .social-link:hover &,
+        .social-link:focus & {
+            fill: var(--accent-color);
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .card {
+        display: block;
+
+        &__item {
+            width: 100%;
+        }
+
+        &__item:not(:first-child) {
+            margin-top: 64px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .comment-dark-barbers {
+        margin-left: 120px;
+    }
+
+    .barbers__title {
+        margin-left: 120px;
+    }
+}

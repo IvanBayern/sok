@@ -1,0 +1,175 @@
+/* HERO */
+.hero {
+    &__right-side {
+        flex-grow: 1;
+        padding: 209px 31px;
+        background-color: #303030;
+        background-size: cover;
+        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg-third-mobile.jpg);
+    }
+
+    &__title {
+        font-family: var(--title-font);
+        @include font (48px, 700, 56px);
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        color: var(--main-light-color);
+    }
+
+    &__desc {
+        font-family: var(--main-font);
+        @include font (16px, 400, 26px);
+        letter-spacing: 0.02em;
+        width: 336px;
+        color: var(--text-color-dark-bg);
+    }
+}
+
+.site-list {
+    transform: rotate(-90deg) translateX(-18.45px);
+    transform-origin: left top;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    &__link {
+        font-family: var(--main-font);
+        @include font (11px, 600, 15px);
+        letter-spacing: 0.2em;
+
+        color: var(--main-dark-color);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    &__item {
+        display: flex;
+
+        &.suptitle::before {
+            margin-right: 40px;
+            background-color: var(--main-dark-color);
+        }
+    }
+}
+
+.comment-light {
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+    @include font (11px, 600, 15px);
+    text-transform: uppercase;
+
+    color: var(--second-text-color);
+
+    &.suptitle::before {
+        background-color: var(--second-text-color);
+    }
+}
+
+.comment-dark.suptitle::before {
+    background-color: var(--main-dark-color);
+}
+
+
+.suptitle {
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: block;
+        margin-right: 20px;
+
+        width: 60px;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.6);
+    }
+}
+@media screen and (max-width: 479px) {
+    .hero__title {
+        @include font (40px, 700, 48px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        padding: 0;
+        width: 100%;
+
+        &__left-side {
+        display: none;
+            }
+        }
+    .hero__desc {
+        width: 100%;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero__right-side {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third-mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        display: flex;
+
+        &__left-side {
+            width: 90px;
+            display: flex;
+            align-items: flex-end;
+            padding-left: 26px;
+            padding-bottom: 40px;
+        }
+        
+        &__right-side {
+            padding-left: 120px;
+            padding-top: 272px;
+            padding-bottom: 237px;
+            padding-right: 90px;
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg-third-tablet.jpg);
+        }
+
+        &__desc {
+            @include font (18px, 400, 30px);
+            width: 360px;
+        }
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero__right-side {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third-tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+
+    &__right-side {
+        padding-left: 100px;
+        padding-top: 272px;
+        padding-bottom: 208px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third.jpg);
+    }
+
+     &__title {
+        @include font (72px, 700, 85px);
+    }
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero__right-side {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third@2x.jpg);
+        }
+}

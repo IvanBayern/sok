@@ -1,0 +1,149 @@
+/* HEADER */
+
+@media screen and (max-width: 767px) {
+    .logo {
+        fill: var(--main-light-color);
+    }
+    .menu .menu__list {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .icon-cross {
+        display: none;
+    }
+
+    .open-mobile-menu-btn {
+        line-height: 0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        z-index: 100;
+       
+        &.is-open .icon-burger {
+            display: none;
+        }
+
+        &.is-open .icon-cross {
+            display: block;
+            z-index: 100;
+        }
+
+        &.is-open .mobile-menu-icons {
+            padding: 11px;
+        }
+    }
+
+    .icon-burger {
+        fill: var(--main-light-color);
+    }
+
+    .mobile-menu-icons {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.page-header {
+    position: absolute;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__phone {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .open-mobile-menu-btn {
+        display: none;
+    }
+
+    .header-btn {
+        margin-right: 20px;
+    }
+
+.menu {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+
+    &__list {
+    display: flex;
+    }
+
+    &__link:hover,
+    &__link:focus,
+    &__phone:hover,
+    &__phone:focus {
+        color: var(--accent-color);
+    }
+
+    &__item:not(:last-child) {
+    margin-right: 16px;
+    }
+
+    &__link {
+        display: block;
+        color: var(--main-light-color);
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+
+        transition: color 250ms linear;
+    }
+
+}
+
+    .logo {
+        margin-right: 50px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+.menu {
+    column-gap: 30px;
+
+    &__item:not(:last-child) {
+    margin-right: 30px;
+    }
+
+    &__phone {
+        display: block;
+        color: var(--main-light-color);
+        margin-right: 40px;
+        margin-left: auto;
+
+        font-family: var(--main-font);
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+
+        transition: color 250ms linear;
+    }
+}
+
+    .logo {
+        margin-right: 70px;
+
+    }
+}
+
+
+

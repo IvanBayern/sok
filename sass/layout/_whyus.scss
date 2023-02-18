@@ -1,0 +1,135 @@
+/* WHY US */
+.why-us-text {
+    @include font (18px, 400, 30px);
+}
+
+.why-us-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-us {
+    order: 2;
+}
+
+.why-us {
+    display: flex;
+    margin-right: 130px;
+
+        &-container {
+            display: flex;
+        }
+
+        &__list {
+                display: flex;
+                flex-direction: column;
+            }
+
+        &__item {
+            width: 170px;
+            background-color: #f7f7f7;
+            padding: 20px 24px;
+
+            &:not(:last-child) {
+                    margin-bottom: 30px;
+            }
+        }
+
+        &-first {
+            margin-right: 30px;
+        }
+
+        &-second {
+            padding-top: 35px;
+        }
+
+        &__number {
+            font-family: var(--main-font);
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 1.35;
+            text-align: center;
+            letter-spacing: 0.05em;
+        
+            color: var(--main-dark-color);
+        }
+
+        &__plus {
+            font-family: var(--main-font);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.375;
+        
+            color: var(--accent-color);
+        }
+
+        &__comment {
+            font-family: var(--main-font);
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.36;
+            text-align: center;
+        
+            color: var(--main-dark-color);
+        }
+}
+@media screen and (max-width: 479px) {
+    .why-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-us-first {
+        margin-right: 0px;
+    }
+
+    .section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .title-light, .title-dark {
+        @include font (30px, 600, 36px);
+        margin-bottom: 44px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .why-us-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .why-us__desc {
+        margin-bottom: 44px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .why-us__desc {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .why-us {
+        margin: 0;
+        justify-content: flex-end;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .why-us-container {
+        flex-direction: row;
+    }
+
+    .why-us {
+        order: 0;
+    }
+
+    .title-dark {
+        width: 430px;
+    }
+}
+

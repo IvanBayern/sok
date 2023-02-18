@@ -1,0 +1,194 @@
+/* PRICES */
+.overlay {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #111319;
+}
+
+.title-light {
+    margin-bottom: 44px;
+    font-family: var(--title-font);
+    @include font (40px, 700, 47px);
+    letter-spacing: 0.05em;
+
+    color: var(--main-light-color);
+}
+
+.btn-service {
+    display: flex;
+    justify-content: center;
+}
+
+.services-table-wrapper {
+    display: block;
+    margin-bottom: 44px;
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+    & .services-table {
+        background-image: none;
+    }
+}
+
+    .first-table {
+        padding: 30px 20px 10px 40px;
+    }
+
+    .second-table {
+        padding: 10px 20px 30px 40px;
+    }
+
+.services-table {
+    &__name,
+    &__price {
+        @include font (14px, 400, 20px);
+        letter-spacing: 0.02em;
+        color: var(--text-color-dark-bg);
+    }
+
+    &__name {
+        order: -1;
+        @include font (14px, 400, 20px);
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        row-gap: 20px;
+
+            &::before {
+                content: '';
+                flex-grow: 1;
+                height: 1px;
+                margin-left: 6px;
+                margin-right: 6px;
+                background-color: rgba(157, 164, 189, 0.12);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .services-table {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &__name,
+        &__price {
+            @include font (11px, 400, 15px);
+            letter-spacing: 0.02em;
+            color: var(--text-color-dark-bg);
+        }
+    }
+    .first-table {
+        padding: 5px 10px 15px 20px;
+    }
+    .second-table {
+        padding: 5px 10px 15px 20px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .overlay {
+        max-width: 480px;
+        background-image: url(../images/bg-service-mobile.png);
+      
+    }
+
+    .services-table {
+        display: block;
+        margin-bottom: 0;
+
+        &__row {
+            width: 358px;
+        }
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile@2x.png);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .overlay {
+        max-width: 768px;
+        background-image: url(../images/bg-service-tablet.png);
+      
+    }
+
+    .title-light {
+        @include font (42px, 700, 49px);
+    }
+
+    .services-table {
+        display: block;
+        margin-bottom: 0;
+
+        &__name,
+        &__price {
+            @include font (18px, 400, 30px);
+        }
+
+        &__row {
+            width: 623px;
+        }
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-tablet@2x.png);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .overlay {
+        max-width: 1600px;
+        background-image: url(../images/bg-service.png);
+    }
+
+    .services-table-wrapper {
+        display: flex;
+    }
+
+    .services-table {
+        flex-basis: 50%;
+        padding: 30px 20px;
+
+        &__row {
+            width: 528px;
+        }
+
+        &:first-child {
+            background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+            margin-right: 30px;
+        }
+
+        &:last-child {
+            background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+        }
+
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service@2x.png);
+    }
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop</title>
+    <title>FOP-SOK</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
@@ -22,16 +22,18 @@
     <div class="container page-header__container">
         <nav class="menu">
             <a href="./index.html" class="logo">
-            <svg aria-label="Logotype" width="69" height="55">
+
+                <img class="header__logo" src="./images/logo.png" alt="Лого" width="69" >
+            <!-- <svg aria-label="Logotype" width="69" height="55">
                 <use href="./images/icons.svg#logo"></use>
-            </svg>
+            </svg> -->
             </a>
 
             <ul class="menu__list list">
-                <li class="menu__item"><a href="#about" class="menu__link link">About</a></li>
-                <li class="menu__item"><a href="#services" class="menu__link link">Services and prices</a></li>
-                <li class="menu__item"><a href="#barbers" class="menu__link link">Barbers</a></li>
-                <li class="menu__item"><a href="#contacts" class="menu__link link">Contacts</a></li>
+                <li class="menu__item"><a href="#about" class="menu__link link">СПЕЦІАЛІЗАЦІЯ</a></li>
+                <li class="menu__item"><a href="#services" class="menu__link link">МОЖЛИВОСТІ</a></li>
+                <li class="menu__item"><a href="#barbers" class="menu__link link">ПЕРЕВАГИ</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link link">КОНТАКТИ</a></li>
             </ul>
         </nav>
             <button type="button" class="open-mobile-menu-btn" data-menu-button>
@@ -41,30 +43,30 @@
                 </svg>
             </button>
 
-            <a href="tel:+380441111111" class="menu__phone link">+38 044 111 11 11</a>
-            <button type="button" class="header-btn btn-white button" data-modal-open>Online-booking</button>
+            <a href="tel:+380732507365" class="menu__phone link">+38 (073) 25 07 365</a>
+            <!-- <button type="button" class="header-btn btn-white button" data-modal-open>Online-booking</button> -->
             
-        </div>
+        
     </div>
     
     <div class="mobile-menu" data-menu>
         <div class="mobile-menu__nav">
             <ul class="mobile-menu__list list">
-                <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link link">About</a></li>
-                <li class="mobile-menu__item"><a href="#services" class="mobile-menu__link link">Services and prices</a></li>
-                <li class="mobile-menu__item"><a href="#barbers" class="mobile-menu__link link">Barbers</a></li>
-                <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link link">Contacts</a></li>
+                <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link link">СПЕЦІАЛІЗАЦІЯ</a></li>
+                <li class="mobile-menu__item"><a href="#services" class="mobile-menu__link link">МОЖЛИВОСТІ</a></li>
+                <li class="mobile-menu__item"><a href="#barbers" class="mobile-menu__link link">ПЕРЕВАГИ</a></li>
+                <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link link">КОНТАКТИ</a></li>
             </ul>
         
-            <a href="tel:+380441111111" class="mobile-menu__phone link">+38 044 111 11 11</a>
-            <button type="button" class="mobile-modal-btn btn-dark button" data-modal-open>Online-booking</button>
-        
+            <a href="tel:+380732507365" class="menu__phone link">+38 (073) 25 07 365</a>
+            <!-- <button type="button" class="mobile-modal-btn btn-dark button" data-modal-open>Online-booking</button>
+         -->
             <ul class="site list">
                 <li class="site-list__item suptitle">
-                    <a href="" class="site-list__link link">Instagram</a>
+                    <a href="" class="site-list__link link">ФОП&#160;Середа&#160;О.К.</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="" class="site-list__link link">Youtube</a>
+                    <a href="" class="site-list__link link">fopsok@ukr.net</a>
                 </li>
             </ul>
         </div>
@@ -78,24 +80,27 @@
     <div class="container hero">
         <div class="hero__left-side">
             <ul class="site-list list">
-                <li class="site-list__item suptitle">
-                    <a href="" class="site-list__link link">Instagram</a>
+                <li class="site-list__item suptitle ">
+                    <a href="" class="site-list__link link color_yellow">ФОП&#160;Середа&#160;О.К.</a>
                 </li>
-                <li class="site-list__item">
-                    <a href="" class="site-list__link link">Youtube</a>
+                <li class="site-list__item ">
+                    <a href="" class="site-list__link link color_blue">fopsok@ukr.net</a>
                 </li>
             </ul>
         </div>
     
 
         <div class="hero__right-side">
-            <p class="comment-light suptitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero__title">BarberShop</h1>
-            <p class="hero__desc">We are experts in trendy men’s haircuts.
-            We work quickly, carefully and with style.</p>
+            <p class="comment-light suptitle">сумлінна робота
+            24 години на добу</p>
+            <h1 class="hero__title">ONLINE</h1>
+            <p class="hero__desc">МІЖНАРОДНА ТРАНСПОРТНО –
+            ЕКСПЕДИТОРСЬКА КОМПАНІЯ ONLINE</p>
         </div>
     </div>
     </section>
+
+    
 
     <!-- ABOUT -->
     <section id="about" class="section">
@@ -103,27 +108,30 @@
             <ul class="about__list list">
                 <li class="about__item">
                     <picture>
-                        <source srcset="./images/beard.jpg 1x, ./images/beard@2x.jpg 2x" media="(min-width: 1200px)" />
-                        <source srcset="./images/beard-tablet.jpg 1x, ./images/beard-tablet@2x.jpg 2x" media="(min-width: 768px)"  />
+                        <source srcset="./images/beard.jpg 1x" media="(min-width: 1200px)" />
+                        <!-- <source srcset="./images/beard-tablet.jpg 1x, ./images/beard-tablet@2x.jpg 2x" media="(min-width: 768px)"  /> -->
                         <img src="./images/beard-tablet.jpg" alt="beard" >
                     </picture>
                     </li>
-                <li class="about__item">
+                <!-- <li class="about__item">
                     <picture>
                         <source srcset="./images/haircut.jpg 1x, ./images/haircut@2x.jpg 2x" media="(min-width: 1200px)"  />
                         <source srcset="./images/haircut-tablet.jpg 1x, ./images/haircut-tablet@2x.jpg 2x" media="(min-width: 768px)" />
                         <img src="./images/haircut-tablet.jpg" alt="haircut-shaving" >
                     </picture>
+                </li> -->
             </ul>
 
             <div class="about__description">
-                <p class="comment-dark suptitle">About</p>
-                <h2 class="title-dark title-dark-about">Best Barbershop in your city</h2>
-                <p class="about__text">If you want to add more confidence to your image, you should definitely visit us.</p>
-                <p class="about__text-main">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
-                of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
-                Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button type="button" class="btn-dark button" data-modal-open>Online-booking</button>
+                <!-- <p class="comment-dark suptitle">About</p> -->
+                <h2 class="title-dark title-dark-about">НАША РОБОТА ОБ’ЄДНУЄ БІЗНЕСИ, ЛЮДЕЙ ТА КРАЇНИ!</h2>
+                <p class="about__text">Наші менеджери працюють для Вас ONLINE по всьому світу!</p>
+                <p class="about__text-main">В сучасному, технологічному світі, що дуже швидко розвивається, щоб залишатися «на плаву», потрібно бути дуже гнучким,
+                відповідати умовам і правилам, які диктує «ринок» й час. Дуже важливо намагатися спрощувати складні процеси в бізнесі,
+                при цьому підвищуючи якість послуг для клієнта. На сьогоднішній день організація та побудова праці у форматі «ONLINE»
+                дає все більше можливостей та результатів. Це зручно, оперативно і , насамперед, вигідно, як для постачальника послуг,
+                його співробітників, так і для клієнта.</p>
+                <!-- <button type="button" class="btn-dark button" data-modal-open>Online-booking</button> -->
             </div>
         </div>
     </section>
@@ -132,7 +140,7 @@
     <section id="services" class="section overlay">
        <div class="container">
             <p class="comment-light suptitle">Spend your time with the best masters</p>
-            <h2 class="title-light">Services and prices</h2>
+            <h2 class="title-light">СПЕЦІАЛІЗАЦІЯ</h2>
 
             <div class="services-table-wrapper">
                 <table class="services-table first-table list">
@@ -172,9 +180,9 @@
                 </tr>
                 </table>
             </div>
-            <div class="btn-service">
+            <!-- <div class="btn-service">
                 <button type="button" class="btn-white button" data-modal-open>Online-booking</button>
-            </div>
+            </div> -->
        </div>
 
     </section>

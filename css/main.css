@@ -4,8 +4,8 @@
   --main-light-color: #fff;
   --main-dark-color: #303030;
   --text-color: #555555;
-  --text-color-dark-bg: #9DA4BD;
-  --second-text-color: rgba(157, 164, 189, 0.6);
+  --text-color-dark-bg: #a4d0ff;
+  --second-text-color: rgba(189, 202, 251, 0.6);
   --accent-color: rgba(255, 108, 0, 1);
 }
 
@@ -424,7 +424,7 @@ label {
   margin-bottom: 20px;
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--main-dark-color);
@@ -450,23 +450,19 @@ label {
   }
 }
 @media screen and (max-width: 1199px) {
-  .title-dark-about {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.1785714286;
-  }
-  .about__list {
+  .about {
     display: block;
-    margin-right: 30px;
   }
-  .about__item {
-    margin-right: 0;
+  .about__description {
+    width: 100%;
   }
-  .about__item:first-child {
-    margin-bottom: 30px;
+  .about .about__list {
+    display: none;
   }
-  .about__text-main {
-    margin-bottom: 44px;
+  .about__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.625;
   }
 }
 /* BARBERS */
@@ -711,8 +707,8 @@ input::placeholder {
     margin-bottom: 44px;
   }
   .booking-form__client-name,
-.booking-form__client-phone,
-.booking-form__comment {
+  .booking-form__client-phone,
+  .booking-form__comment {
     width: 100%;
   }
   .booking-form__client-name {
@@ -1047,7 +1043,7 @@ input::placeholder {
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero__right-side {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third-mobile.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1077,7 +1073,7 @@ input::placeholder {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero__right-side {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third-tablet.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1095,9 +1091,17 @@ input::placeholder {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero__right-side {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-third.jpg);
   }
 }
+.color_blue {
+  color: #a4d0ff;
+}
+
+.color_yellow {
+  color: rgb(254, 233, 68);
+}
+
 /* PRICES */
 .overlay {
   max-width: 1600px;
@@ -1173,6 +1177,9 @@ input::placeholder {
 }
 
 @media screen and (max-width: 479px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile.png);
+  }
   .services-table-wrapper {
     display: flex;
     flex-direction: column;
@@ -1193,8 +1200,7 @@ input::placeholder {
 }
 @media screen and (min-width: 480px) {
   .overlay {
-    max-width: 480px;
-    background-image: url(../images/bg-service-mobile.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile.png);
   }
   .services-table {
     display: block;
@@ -1206,13 +1212,13 @@ input::placeholder {
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile@2x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile.png);
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
-    background-image: url(../images/bg-service-tablet.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-tablet.png);
   }
   .title-light {
     font-size: 42px;
@@ -1234,13 +1240,13 @@ input::placeholder {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-tablet@2x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-tablet.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
     max-width: 1600px;
-    background-image: url(../images/bg-service.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service.png);
   }
   .services-table-wrapper {
     display: flex;
@@ -1262,7 +1268,7 @@ input::placeholder {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service@2x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service.png);
   }
 }
 /* WHY US */

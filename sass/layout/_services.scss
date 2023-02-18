@@ -7,6 +7,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #111319;
+   
 }
 
 .title-light {
@@ -76,6 +77,10 @@
 }
 
 @media screen and (max-width: 479px) {
+
+    .overlay {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile.png);
+        }
     .services-table {
         &-wrapper {
             display: flex;
@@ -98,10 +103,8 @@
 
 @media screen and (min-width: 480px) {
     .overlay {
-        max-width: 480px;
-        background-image: url(../images/bg-service-mobile.png);
-      
-    }
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile.png);
+        }
 
     .services-table {
         display: block;
@@ -117,14 +120,14 @@
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .overlay {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile@2x.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-mobile.png);
     }
 }
 
 @media screen and (min-width: 768px) {
     .overlay {
         max-width: 768px;
-        background-image: url(../images/bg-service-tablet.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-tablet.png);
       
     }
 
@@ -151,14 +154,14 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .overlay {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-tablet@2x.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service-tablet.png);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .overlay {
         max-width: 1600px;
-        background-image: url(../images/bg-service.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service.png);
     }
 
     .services-table-wrapper {
@@ -189,6 +192,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .overlay {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service@2x.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-service.png);
     }
 }

@@ -54,7 +54,7 @@
     margin-bottom: 20px;
     font-family: var(--title-font);
     font-weight: 700;
-    font-size: 42px;
+    font-size: 32px;
     line-height: 1.16;
     letter-spacing: 0.05em;
 
@@ -84,25 +84,45 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .title-dark-about {
-        @include font(28px, 700, 33px);
-    }
 
     .about {
-        &__list {
             display: block;
-            margin-right: 30px;
+    
+            &__description {
+                width: 100%;
+            }
+    
+            .about &__list {
+                display: none;
+            }
+    
+            &__text {
+                @include font(16px, 400, 26px);
+            }
         }
-        &__item {
-            margin-right: 0;
-        }
+    
+        // .title-dark {
+        //     max-width: 306px;
+        // }
+    // .title-dark-about {
+    //     @include font(28px, 700, 33px);
+    // }
 
-        &__item:first-child {
-            margin-bottom: 30px;
-        }
+    // .about {
+    //     &__list {
+    //         display: block;
+    //         margin-right: 30px;
+    //     }
+    //     &__item {
+    //         margin-right: 0;
+    //     }
 
-        &__text-main {
-        margin-bottom: 44px;
-    }
-    }
+    //     &__item:first-child {
+    //         margin-bottom: 30px;
+    //     }
+
+    //     &__text-main {
+    //     margin-bottom: 44px;
+    // }
+    // }
 }

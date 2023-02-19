@@ -3,3 +3,61 @@
   font-weight: $fw;
   line-height: $lh / $fs;
 }
+
+
+@mixin flex-based($items, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mq($type) {
+  $mob: 320px;
+  $tab: 768px;
+  $desk: 1200px;
+
+  @if $type ==mob-only {
+    @media screen and (max-width: ($tab - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+
+  @if $type ==tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $type ==tab-only {
+    @media screen and (min-width: $tab) and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+
+  @if $type ==no-desk {
+    @media screen and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+}
+
+@mixin section($p-top: 60px, $p-bottom: 60px) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+}

@@ -39,7 +39,8 @@ input::placeholder {
         width: 270px;
         height: 24px;
 
-        color: var(--main-light-color);
+        // color: var(--main-light-color);
+        color: #2E64BE;
 
         border-top: none;
         border-left: none;
@@ -73,7 +74,8 @@ input::placeholder {
     &__link {
         display: flex;
 
-        color: var(--text-color-dark-bg);
+        // color: var(--text-color-dark-bg);
+        color: #021E4B;
         @include font (18px, 400, 30px);
         letter-spacing: 0.02em;
     }
@@ -96,7 +98,8 @@ input::placeholder {
     @include font (11px, 600, 15px);
     text-transform: uppercase;
 
-    color: var(--main-light-color);
+    // color: var(--main-light-color);
+    color: #2E64BE;
 
     &.suptitle::before {
         background-color: var(--main-light-color);
@@ -106,13 +109,13 @@ input::placeholder {
         @include font (18px, 600, 30px);
         letter-spacing: 0.02em;
 
-        color: var(--text-color-dark-bg);
+        color: #021E4B;
     }
 }
 
 .contacts {
     display: flex;
-    background-image: url(../images/bg-contacts-mobile.png);
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts.png);
     background-color: #191C26;
     background-origin: padding-box;
     background-size: cover;
@@ -125,13 +128,13 @@ input::placeholder {
 }
 
 @media screen and (max-width: 1199px) {
-    .booking {
+    // .booking {
         
-        &-container {
-            padding: 100px 31px;
+    //     &-container {
+    //         padding: 100px 30px;
             
-        }
-    }
+    //     }
+    // }
     .booking-form__client-name, .booking-form__client-phone {
         width: 330px;
         margin-right: 0;
@@ -143,7 +146,7 @@ input::placeholder {
 
     .contacts {
         display: block;
-        padding: 100px 31px;
+        padding: 50px 31px;
 
         &__container {
             display: flex;
@@ -176,7 +179,7 @@ input::placeholder {
 
     .booking-form__container {
         display: block;
-        margin-bottom: 44px;
+        // margin-bottom: 44px;
     }
 
     .booking-form__client-name,
@@ -211,13 +214,13 @@ input::placeholder {
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .contacts {
-        background-image: url(../images/bg-contacts-mobile@2x.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts.png);
     }
 }
 
 @media screen and (min-width: 768px) {
     .contacts {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts-tablet.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts.png);
 
     }
 }
@@ -226,7 +229,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .contacts {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts-tablet@2x.png);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts.png);
     
         }
 }
@@ -240,11 +243,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 
         &-container {
-            display: flex;
-            flex-direction: column;
-            padding-top: 130px;
-            padding-left: 215px;
-            padding-right: 30px;
+            // display: flex;
+            // flex-direction: column;
+            // padding-top: 130px;
+            // padding-left: 215px;
+            // padding-right: 30px;
             background-image: linear-gradient(to right, rgba(25, 28, 38, 1) 0%, rgba(25, 28, 38, 1) 100%);
         }
     }
@@ -255,11 +258,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
     .contacts {
         display: flex;
-        padding-top: 130px;
+        padding-top: 40px;
         padding-left: 100px;
-        padding-right: 415px;
-        padding-bottom: 120px;
-        background-image: url(../images/bg-contacts.png);
+        padding-right: 355px;
+        padding-bottom: 40px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/bg-contacts.png);
     }
 }
 
@@ -267,7 +270,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .contacts {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts@2x.png);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-contacts.png);
     
         }
 }

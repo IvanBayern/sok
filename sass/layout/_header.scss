@@ -3,6 +3,7 @@
 @media screen and (max-width: 767px) {
     .logo {
         fill: var(--main-light-color);
+       
     }
     .menu .menu__list {
         display: none;
@@ -110,6 +111,7 @@
 
     .logo {
         margin-right: 50px;
+        width: 69px;
 
     }
 }
@@ -141,9 +143,39 @@
 
     .logo {
         margin-right: 70px;
+        margin-left: 20px;
+        width: 120px;
 
     }
 }
 
 
 
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    
+
+    .menu {
+        display: flex;
+        
+
+       
+
+        
+
+       
+
+       
+
+    }
+
+    .logo {
+        margin-right: 50px;
+        width: 69px;
+
+    }
+}

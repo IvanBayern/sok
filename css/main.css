@@ -907,6 +907,7 @@ input::placeholder {
   }
   .logo {
     margin-right: 50px;
+    width: 69px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -931,6 +932,17 @@ input::placeholder {
   }
   .logo {
     margin-right: 70px;
+    margin-left: 20px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: flex;
+  }
+  .logo {
+    margin-right: 50px;
+    width: 69px;
   }
 }
 /* HERO */
@@ -1045,10 +1057,8 @@ input::placeholder {
     display: flex;
   }
   .hero__left-side {
-    width: 90px;
     display: flex;
     align-items: flex-end;
-    padding-left: 26px;
     padding-bottom: 40px;
   }
   .hero__right-side {

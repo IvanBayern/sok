@@ -4,7 +4,7 @@
   --main-light-color: #fff;
   --main-dark-color: #303030;
   --text-color: #555555;
-  --text-color-dark-bg: #a4d0ff;
+  --text-color-dark-bg: #86D1F5;
   --second-text-color: rgba(189, 202, 251, 0.6);
   --accent-color: rgba(255, 108, 0, 1);
 }
@@ -1447,7 +1447,7 @@ input::placeholder {
   padding: 40px 32px;
   background: var(--color-light);
   box-shadow: 0px 8px 30px rgba(1, 14, 46, 0.1);
-  border-radius: 24px;
+  border-radius: 4px;
 }
 .contacts__item:not(:last-child) {
   margin-bottom: 20px;
@@ -1475,8 +1475,7 @@ input::placeholder {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
-  color: yellow;
-  background: #0376f1;
+  color: #0F70B7;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1484,13 +1483,12 @@ input::placeholder {
     margin-bottom: 40px;
     border-radius: 3px;
     max-width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     max-height: 100%;
   }
 }
 
 .contacts__category--bgcolor {
-  background: #0376f1;
   min-width: 230px;
 }
 @media screen and (min-width: 768px) {
@@ -1557,7 +1555,27 @@ input::placeholder {
   }
 }
 
+.contacts__time::before {
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  content: url(../../images/earth.svg);
+}
+@media screen and (min-width: 768px) {
+  .contacts__time::before {
+    left: -20px;
+    top: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__time::before {
+    left: -20px;
+    top: 1px;
+  }
+}
+
 .contacts__time {
+  position: relative;
   margin-bottom: 8px;
 }
 @media screen and (min-width: 768px) {

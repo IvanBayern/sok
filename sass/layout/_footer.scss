@@ -1,20 +1,20 @@
 /* FOOTER */
 .footer {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__list {
-        display: flex;
-        column-gap: 40px;
-    }
+    // &__container {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+    // &__list {
+    //     display: flex;
+    //     column-gap: 40px;
+    // }
     
-    &__item {
-        display: flex;
-        &.suptitle::before {
-                background-color: var(--text-color);
-        }
-    }
+    // &__item {
+    //     display: flex;
+    //     &.suptitle::before {
+    //             background-color: var(--text-color);
+    //     }
+    // }
     &__copyright {
         font-weight: 600;
         font-size: 11px;
@@ -22,9 +22,58 @@
 
         letter-spacing: 0.2em;
 
-        color: var(--text-color-dark-bg);
+        color: #0f70b7;
 
     }
+}
+@media screen and (max-width: 479px){
+.footer__center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (min-width: 480px){ 
+
+    .footer {
+
+        // &__container {
+        //         display: flex;
+        //         justify-content: space-between;
+        //     }
+            &__container {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            &__list {
+                display: flex;
+                column-gap: 40px;
+            }
+    
+            &__item {
+                display: flex;
+    
+                &.suptitle::before {
+                    background-color: var(--text-color);
+                    margin-right: 40px;
+                }
+            }
+    
+            &__copyright {
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 15px;
+    
+                letter-spacing: 0.2em;
+    
+                color: var(--text-color-dark-bg);
+    
+            }
+                        
+       
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -40,11 +89,11 @@
         align-items: flex-start;
         justify-content: end;
     }
-    &__item {
-        &.suptitle::before {
-            margin-right: 40px;
-        }
-    }
+    // &__item {
+    //     &.suptitle::before {
+    //         margin-right: 40px;
+    //     }
+    // }
 
     &__copyright {
         margin-top: 35px;
@@ -59,5 +108,17 @@
         &__section {
             padding: 56px 0;
         }
+                &__list {
+                         display: flex;
+                         column-gap: 40px;
+                     }
     }
 }
+
+
+
+
+// .link__pfone{
+//     margin-left: auto;
+//     margin-right: auto;
+// }

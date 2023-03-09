@@ -26,7 +26,7 @@
 
     }
 }
-@media screen and (max-width: 479px){
+@media screen and (max-width: 779px){
 .footer__center{
     text-align: center;
     margin-left: auto;
@@ -34,7 +34,7 @@
 }
 }
 
-@media screen and (min-width: 480px){ 
+@media screen and (min-width: 780px){ 
 
     .footer {
 
@@ -134,4 +134,31 @@
 
 .footer__links{
     margin-left: auto;
+}
+
+
+.prapor{
+    position: relative;
+}
+.footer__prapor::before {
+    
+    position: absolute;
+    left: -20px;
+    top: 5px;
+
+
+     
+
+    content: url(../../images/prapor.jpg);
+
+    @media screen and (min-width: 768px) {
+            left: -40px;
+             top: 1px;
+        }
+        
+ @media screen and (max-width: 767px) {
+    left: 130px;
+        top: 90px;
+ }
+    
 }

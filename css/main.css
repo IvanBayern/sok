@@ -208,9 +208,9 @@ body {
   }
   .mobile-menu__nav {
     width: 70%;
-    padding-top: 118px;
+    padding-top: 40px;
     padding-left: 40px;
-    padding-bottom: 227px;
+    padding-bottom: 40px;
     position: absolute;
     top: 0;
     right: 0;
@@ -778,14 +778,14 @@ input::placeholder {
   color: #0f70b7;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 779px) {
   .footer__center {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 780px) {
   .footer__container {
     display: flex;
     justify-content: space-between;
@@ -841,6 +841,29 @@ input::placeholder {
 
 .footer__links {
   margin-left: auto;
+}
+
+.prapor {
+  position: relative;
+}
+
+.footer__prapor::before {
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  content: url(../../images/prapor.jpg);
+}
+@media screen and (min-width: 768px) {
+  .footer__prapor::before {
+    left: -40px;
+    top: 1px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__prapor::before {
+    left: 130px;
+    top: 90px;
+  }
 }
 
 /* HEADER */
@@ -1159,7 +1182,6 @@ input::placeholder {
 
 .services-table-wrapper {
   display: block;
-  margin-bottom: 44px;
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .services-table-wrapper .services-table {
@@ -1236,7 +1258,7 @@ input::placeholder {
     margin-bottom: 0;
   }
   .services-table__row {
-    width: 358px;
+    width: 240px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -1285,7 +1307,7 @@ input::placeholder {
     padding: 30px 20px;
   }
   .services-table__row {
-    width: 528px;
+    width: 526px;
   }
   .services-table:first-child {
     background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -1606,6 +1628,35 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .contacts__time {
     margin-bottom: 12px;
+  }
+}
+
+.contacts__time1 {
+  position: relative;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__time1 {
+    margin-bottom: 16px;
+  }
+}
+
+.contacts__time1::before {
+  position: absolute;
+  left: -20px;
+  top: -2px;
+  content: url(../images/earth.svg);
+}
+@media screen and (min-width: 768px) {
+  .contacts__time1::before {
+    left: -20px;
+    top: -2px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__time1::before {
+    left: -20px;
+    top: -1px;
   }
 }
 

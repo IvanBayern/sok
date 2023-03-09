@@ -26,7 +26,7 @@
 
 .services-table-wrapper {
     display: block;
-    margin-bottom: 44px;
+    // margin-bottom: 44px;
     background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 
     & .services-table {
@@ -112,7 +112,7 @@
         margin-bottom: 0;
 
         &__row {
-            width: 358px;
+            width: 240px;
         }
     }
 }
@@ -174,7 +174,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         padding: 30px 20px;
 
         &__row {
-            width: 528px;
+            width: 526px;
         }
 
         &:first-child {

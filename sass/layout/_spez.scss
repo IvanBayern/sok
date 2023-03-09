@@ -188,6 +188,8 @@
     position: absolute;
     left: -20px;
     top: 5px;
+
+
      
 
     content: url(../images/earth.svg);
@@ -204,6 +206,7 @@
     
 }
 
+
 .contacts__time {
     position: relative;
     // border-bottom: 1px solid var(--color-linear);
@@ -213,7 +216,37 @@
         margin-bottom: 12px;
     }
 }
+.contacts__time1 {
+    position: relative;
+        // border-bottom: 1px solid var(--color-linear);
+        margin-bottom: 10px;
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+        }
+    }
+.contacts__time1::before {
 
+    position: absolute;
+    left: -20px;
+    top: -2px;
+
+
+
+
+    content: url(../images/earth.svg);
+
+    @media screen and (min-width: 768px) {
+        left: -20px;
+        top: -2px;
+    }
+
+    @media screen and (max-width: 767px) {
+        left: -20px;
+        top: -1px;
+    }
+
+}
 .contacts__day {
     font-weight: 500;
 

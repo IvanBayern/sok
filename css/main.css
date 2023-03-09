@@ -835,6 +835,14 @@ input::placeholder {
     column-gap: 40px;
   }
 }
+.footer__blue {
+  color: #0f70b7;
+}
+
+.footer__links {
+  margin-left: auto;
+}
+
 /* HEADER */
 @media screen and (max-width: 767px) {
   .logo {
@@ -1003,7 +1011,6 @@ input::placeholder {
   font-weight: 600;
   line-height: 1.3636363636;
   letter-spacing: 0.2em;
-  color: var(--main-dark-color);
 }
 .site-list__link:hover, .site-list__link:focus {
   color: var(--accent-color);
@@ -1087,10 +1094,10 @@ input::placeholder {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg-third-tablet.jpg);
   }
   .hero__desc {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6666666667;
-    width: 360px;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 1.5151515152;
+    width: 660px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {

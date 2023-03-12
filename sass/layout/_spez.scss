@@ -1,33 +1,3 @@
-// .contacts__section {
-//     // padding-top: 30px;
-//     // padding-bottom: 40px;
-
-//     // background: var(--color-bg-section);
-//     // background-image: linear-gradient(var(--color-light) 0%,
-//     //         var(--color-light) 23%,
-//     //         var(--color-bg-section) 23%,
-//     //         var(--color-bg-section) 100%);
-
-//     @include mq(tab) {
-//         // padding-top: 40px;
-//         // background: var(--color-bg-section);
-//         // background-image: linear-gradient(var(--color-light) 0%,
-//         //         var(--color-light) 48%,
-//         //         var(--color-bg-section) 48%,
-//         //         var(--color-bg-section) 100%);
-//     }
-
-//     @include mq(desk) {
-//         // padding-top: 60px;
-//         // padding-bottom: 60px;
-
-//         // background: var(--color-bg-section);
-//         // background-image: linear-gradient(var(--color-light) 0%,
-//         //         var(--color-light) 20%,
-//         //         var(--color-bg-section) 20%,
-//         //         var(--color-bg-section) 100%);
-//     }
-// }
 
 .contacts__section{
     padding-top: 30px;
@@ -35,9 +5,7 @@
 
 .contacts__list {
 
-    // display: flex;
-    // gap: 20px;
-    // flex-wrap: wrap;
+   
 
     margin-bottom: 32px;
 
@@ -82,22 +50,15 @@
     }
 }
 
-// .contacts__item:last-child {
-//   @media screen and (max-width: 767px) {
-//     margin-bottom: 32px;
-//   }
-// }
+
 
 .contacts__category {
-    // display: block;
+    
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
     color: #0F70B7;
-    // background: #0376f1;
-    // border-radius: 1px;
-    // max-width: 80px;
-    // max-height: 16px;
+   
     margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
@@ -111,7 +72,7 @@
 }
 
 .contacts__category--bgcolor {
-    // background: #0376f1;
+    
     min-width: 230px;
 
     @media screen and (min-width: 768px) {
@@ -138,7 +99,7 @@
 }
 
 .contacts__description {
-    // text-align: center;
+   
     line-height: 1.5;
 
     color: #907e82;
@@ -161,7 +122,7 @@
     
     padding-bottom: 24px;
 
-    // border-bottom: 1px solid var(--color-linear);
+  
 
     @media screen and (min-width: 768px) {
         padding-bottom: 32px;
@@ -175,7 +136,7 @@
 
 
 
-    // border-bottom: 1px solid var(--color-linear);
+    
 
     @media screen and (min-width: 768px) {
         padding-top: 32px;
@@ -381,7 +342,7 @@
 }
 
 :root {
-    //   Colors
+    
     --color-primary: #000;
     --color-accent: #d41443;
     --color-light: #fff;
@@ -405,13 +366,13 @@
     --color-accent-hover-btn-bg: #c7133e;
     --color-hover-btn-bg: #ecebeb;
 
-    // Fonts
+    
     --font-family: 'DM sans', sans-serif;
     --font-family-secondary: 'Titan One';
     --font-size: 16px;
     --letter-spacing: 0.04em;
 
-    //   Animation
+    
     --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --anim-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -500,7 +461,7 @@ button {
 .container {
     padding: 0 20px;
     margin: 0 auto;
-    // outline: 1px solid tomato;
+   
 
     @include mq(mob) {
         width: 320px;

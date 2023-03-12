@@ -1,20 +1,6 @@
-/* FOOTER */
+
 .footer {
-    // &__container {
-    //     display: flex;
-    //     justify-content: space-between;
-    // }
-    // &__list {
-    //     display: flex;
-    //     column-gap: 40px;
-    // }
     
-    // &__item {
-    //     display: flex;
-    //     &.suptitle::before {
-    //             background-color: var(--text-color);
-    //     }
-    // }
     &__copyright {
         font-weight: 600;
         font-size: 11px;
@@ -38,10 +24,7 @@
 
     .footer {
 
-        // &__container {
-        //         display: flex;
-        //         justify-content: space-between;
-        //     }
+       
             &__container {
                 display: flex;
                 justify-content: space-between;
@@ -149,7 +132,7 @@
 
      
 
-    content: url(../../images/prapor.jpg);
+    content: url(../images/prapor.jpg);
 
     @media screen and (min-width: 768px) {
             left: -40px;
